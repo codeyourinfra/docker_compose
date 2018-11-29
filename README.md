@@ -1,6 +1,6 @@
 # docker_compose
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/docker_compose.svg)]() [![Build status](https://travis-ci.org/codeyourinfra/docker_compose.svg?branch=master)](https://travis-ci.org/codeyourinfra/docker_compose)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/docker_compose.svg)](https://github.com/codeyourinfra/docker_compose/releases/latest) [![Build status](https://travis-ci.org/codeyourinfra/docker_compose.svg?branch=master)](https://travis-ci.org/codeyourinfra/docker_compose) [![Ansible Role](https://img.shields.io/ansible/role/29245.svg)](https://galaxy.ansible.com/codeyourinfra/docker_compose) [![Ansible Role downloads](https://img.shields.io/ansible/role/d/29245.svg)](https://galaxy.ansible.com/codeyourinfra/docker_compose)
 
 Ansible role to install [docker-compose](https://docs.docker.com/compose).
 
