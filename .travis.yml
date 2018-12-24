@@ -13,19 +13,10 @@ addons:
     - python-pip
 
 install:
-  - pip install ansible
-
-before_script:
-  - docker run --name xenial -d codeyourinfra/python3:xenial
-  - docker run --name bionic -d codeyourinfra/python3:bionic
+  - pip install -r requirements.txt
 
 script:
-  - ansible-galaxy install -r requirements.yml -p tests/roles
-  - ansible-playbook tests/test.yml -i tests/inventory
-
-after_script:
-  - docker stop xenial bionic
-  - docker rm xenial bionic
+  - molecule test
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/

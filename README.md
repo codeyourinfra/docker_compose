@@ -21,9 +21,19 @@ Please don't turn off facts, because the `codeyourinfra.docker` role requires th
 
 ## Build process
 
-The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/docker_compose). During the build, the role is tested by using [Ubuntu Docker images with Python 3](https://hub.docker.com/r/codeyourinfra/python3).
+The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfra/docker_compose). During the build, the role is tested by using [Molecule](https://molecule.readthedocs.io).
 
 The build is also triggered if any change is made in the `codeyourinfra.docker` role. After all, nobody wants some issue introduced by a change made in the upstream code :)
+
+## Test yourself
+
+Inside your [Python virtual environment](https://docs.python.org/3/tutorial/venv.html), run:
+
+`pip install -r requirements.txt`
+
+And then:
+
+`molecule test`
 
 ## Author Information
 
