@@ -10,8 +10,16 @@ lint:
 platforms:
   - name: xenial
     image: ubuntu:xenial
+    groups:
+      - ubuntu
   - name: bionic
     image: ubuntu:bionic
+    groups:
+      - ubuntu
+  - name: centos7
+    image: centos:7
+    groups:
+      - centos
 provisioner:
   name: ansible
   lint:
